@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Xinyang Hu | Statistics & Data Science</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Minimal, nice default styles -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+  />
+  <style>
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin-right: 0.75rem;
+      font-size: 0.95rem;
+    }
+    .tagline {
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      border: 1px solid currentColor;
+      margin-right: 0.3rem;
+      margin-bottom: 0.3rem;
+      white-space: nowrap;
+    }
+    .meta {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    .section-meta {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 0.3rem;
+    }
+    .item {
+      margin-bottom: 1.1rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="margin-bottom: 0.2rem;">Xinyang Hu</h1>
+    <div class="meta">
+      Ph.D. Candidate, Statistics &amp; Data Science, Yale University<br />
+      Research: Statistical Machine Learning · LLM Foundations · AI Agents · Responsible &amp; Interpretable AI
+    </div>
+    <p class="tagline">
+      I work on the theory and practice of large language models and multi-agent systems, with a focus on transparent,
+      reliable AI for scientific discovery and complex decision-making.
+    </p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#talks">Talks</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Ph.D. student in Statistics &amp; Data Science at Yale University (advised by Prof. Zhuoran Yang),
+        with research interests in statistical machine learning, foundations of LLMs, AI agents, and responsible &amp;
+        interpretable AI. Before Yale, I completed a B.S. in Mathematics (summa cum laude) with a Computer Science
+        minor at the University of Wisconsin–Madison.
+      </p>
+      <p>
+        My recent work spans multi-agent systems for scientific discovery and negotiation, theoretical foundations of
+        in-context and chain-of-thought learning, and scalable infrastructure for training and evaluating LLMs.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research Experience</h2>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>Summer AI Researcher, Flagship Pioneering</strong> · June 2025 – August 2025
+        </div>
+        <ul>
+          <li>
+            Built a multi-agent system for hypothesis testing in biomedical research, demonstrating transparent and scalable
+            intelligence for automated scientific discovery.
+          </li>
+          <li>
+            Designed a self-correcting architecture that detects and resolves errors early, improving robustness and reliability.
+          </li>
+          <li>
+            Created an automated framework that generates auditable, human-readable Jupyter notebook reports with code,
+            results, and explanations for scientific transparency.
+          </li>
+          <li>
+            Benchmarked on BixBench, achieving 76% accuracy — a 15× improvement over GPT-only baselines and 3× over standard
+            ReACT agents.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>Y-Agent Group: Bargaining Agent, Yale &amp; Tsinghua University</strong> · Developer &amp; Researcher · Dec 2024 – Present
+        </div>
+        <ul>
+          <li>
+            Developed a multi-turn negotiation agent for buyer–seller interactions, modeling multi-turn reasoning and emergent
+            social intelligence.
+          </li>
+          <li>
+            Trained models with GRPO in event-driven, tool-augmented environments to optimize negotiation strategies.
+          </li>
+          <li>
+            Designed a multi-signal reward system balancing correctness, reliability, and utility for stable policy improvement.
+          </li>
+          <li>
+            Built a scalable training pipeline (vLLM, DeepSpeed ZeRO-3, LoRA) and gained experience in GPU resource management
+            and distributed training under tight VRAM budgets.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>LLM Theory Group, Yale University</strong> · Graduate Researcher · June 2023 – Present
+        </div>
+        <ul>
+          <li>
+            Developed a statistical foundation for LLM pretraining and prompting, moving prompt engineering from intuition
+            toward a principled science.
+          </li>
+          <li>
+            Built a Bayesian framework to analyze in-context learning methods (vanilla ICL, chain-of-thought, and variants).
+          </li>
+          <li>
+            Investigated the transformer architecture’s role in generalization and approximation for high-dimensional data.
+          </li>
+          <li>
+            Proposed a two-step framework for length generalization, refining task representations and hidden states to
+            improve prediction accuracy.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>Y-Agent Group: Literature Survey Agent, Yale University</strong> · Developer &amp; Researcher · Aug 2024 – Present
+        </div>
+        <ul>
+          <li>
+            Built a multi-agent system that automates academic literature surveys, orchestrating agents for writing,
+            reviewing, and compiling.
+          </li>
+          <li>
+            Introduced <em>Elastic Depth Reporting</em> to support outputs ranging from high-level overviews to detailed
+            technical content with code and math.
+          </li>
+          <li>
+            Automated production of structured, citation-rich documents with clickable references and bibliographies.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>Longitudinal Study of Communication Network Dynamics, Yale University</strong> · Graduate Researcher · Jan 2023 – June 2023
+        </div>
+        <ul>
+          <li>
+            Analyzed communication equity in a large software company using 27M+ emails from 200k employees.
+          </li>
+          <li>
+            Applied hyperbolic and spectral embeddings to study hierarchical networks over time.
+          </li>
+          <li>
+            Showed how equitable communication structures impact organizational outcomes and global-scale collaboration.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>Optimal Iteration Complexity for SAA Proximal Bundle Method, Yale University</strong> · Graduate Researcher · Jan 2023 – July 2023
+        </div>
+        <ul>
+          <li>
+            Developed a new stochastic proximal bundle method with near-optimal convergence rates.
+          </li>
+          <li>
+            Proved statistical efficiency for applications such as risk minimization and portfolio optimization.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications &amp; Preprints</h2>
+      <ul>
+        <li>
+          <strong>Unveiling the Statistical Foundations of Chain-of-Thought Prompting Methods.</strong><br />
+          Xinyang Hu, Fengzhuo Zhang, Siyu Chen, Zhuoran Yang. arXiv preprint, 2024.<br />
+          <a href="https://arxiv.org/abs/2408.14511" target="_blank" rel="noopener noreferrer">
+            arXiv:2408.14511
+          </a>
+        </li>
+        <li>
+          <strong>Learning Task Representations from In-Context Learning.</strong><br />
+          Baturay Saglam, Xinyang Hu, Zhuoran Yang, Dionysis Kalogerias, Amin Karbasi.
+          Findings of ACL 2025, Vienna, Austria.<br />
+          <a href="https://aclanthology.org/2025.findings-acl.345/" target="_blank" rel="noopener noreferrer">
+            ACL Anthology
+          </a>
+        </li>
+        <li>
+          <strong>Indirect Statistical Inference with Guaranteed Necessity and Sufficiency.</strong><br />
+          Zhengjun Zhang, Xinyang Hu, Chuyang Lu, Tianying Liu. arXiv preprint, 2025.<br />
+          <a href="https://arxiv.org/abs/2509.20249" target="_blank" rel="noopener noreferrer">
+            arXiv:2509.20249
+          </a>
+        </li>
+        <li>
+          <strong>A New Seismic Horizon Picking Method Based on Edge Detection and the Kalman Filter.</strong><br />
+          Xiaoying Deng, Xinyang Hu. IEEE CISP-BMEI, 2019.<br />
+          <a href="https://ieeexplore.ieee.org/document/8965858" target="_blank" rel="noopener noreferrer">
+            IEEE Xplore
+          </a>
+        </li>
+        <li>
+          <strong>Optimal Iteration Complexity and Asymptotic Normality for SAA Proximal Bundle Method.</strong><br />
+          Xinyang Hu, Jiaming Liang. Presented at ICSP 2023.
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects &amp; Leadership</h2>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>AIntegraxis, Tsai City, Yale University</strong> · Founder &amp; Team Leader · Fall 2024
+        </div>
+        <ul>
+          <li>
+            Building LLM-powered productivity tools to manage complex, interdisciplinary projects.
+          </li>
+          <li>
+            Designed assistants using prompt engineering and fine-tuning to improve efficiency, scheduling, and collaboration.
+          </li>
+          <li>
+            Selected for Yale’s 2024 LaunchPad program for innovation with potential scalable social impact.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>Workshop for Full-Stack AI Researchers, Tsai City, Yale</strong> · Builder · Fall 2025
+        </div>
+        <ul>
+          <li>
+            Creating educational tutorials and demos on the full LLM stack: training, serving, agents, evaluation,
+            safety, interpretability, and infrastructure.
+          </li>
+          <li>
+            Delivering live demos and collaborative write-ups to support open learning across the AI research community.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="section-meta">
+          <strong>Cloogle, UW–Madison</strong> · Founder &amp; Team Leader · Sep 2018 – Sep 2019
+        </div>
+        <ul>
+          <li>
+            Built an AI-powered visual search engine for apparel retailers using ResNet50-based image recognition with
+            multi-resolution feature extraction.
+          </li>
+          <li>
+            Improved product discovery and user engagement; led team to 3rd place in the CS Venture Competition and
+            Best Early-Stage Award at the Transcend Business Competition.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="talks">
+      <h2>Selected Talks</h2>
+      <ul>
+        <li>
+          <strong>Unveiling the Statistical Foundations of In-Context Learning</strong> – Fan’s Group, Princeton (2024)
+        </li>
+        <li>
+          <strong>What and how does CoT learn? Bayesian Model Averaging and Generalization</strong> –
+          Theory and Practice of Foundation Models, Yale (2023)
+        </li>
+        <li>
+          <strong>Quasi-Independence Model and Rational MLE</strong> –
+          Algebra in Statistics and Computation, UW–Madison (2020)
+        </li>
+        <li>
+          <strong>Horn Uniformization and the MLE of Cyclic Models</strong> –
+          Rapid-Fire Math Research Presentations (Texas State, 2020); Young Mathematician Conference (2020);
+          Women in Mathematics in New England (Smith College, 2020)
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical &amp; Professional Skills</h2>
+      <p>
+        <span class="pill">LLMs</span>
+        <span class="pill">Multi-Agent Systems</span>
+        <span class="pill">Deep Learning</span>
+        <span class="pill">Bayesian Methods</span>
+        <span class="pill">Probabilistic Modeling</span>
+        <span class="pill">Optimization</span>
+        <span class="pill">Time Series</span>
+        <span class="pill">Reinforcement Learning</span>
+      </p>
+      <p>
+        <span class="pill">Distributed Training (JAX/Ray)</span>
+        <span class="pill">DeepSpeed</span>
+        <span class="pill">GPU Optimization</span>
+        <span class="pill">HPC &amp; Cloud</span>
+        <span class="pill">Model Compression</span>
+        <span class="pill">Sparse Attention</span>
+      </p>
+      <p>
+        <span class="pill">Interpretability</span>
+        <span class="pill">Fairness &amp; Bias</span>
+        <span class="pill">Robustness</span>
+        <span class="pill">Reproducibility</span>
+        <span class="pill">Safety-Critical Deployment</span>
+        <span class="pill">Data Ethics &amp; Equity</span>
+      </p>
+      <p>
+        <span class="pill">Interdisciplinary Collaboration</span>
+        <span class="pill">Cross-Cultural Teamwork</span>
+        <span class="pill">Open-Source</span>
+        <span class="pill">Mentorship</span>
+        <span class="pill">Knowledge Sharing</span>
+      </p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email:
+      <a href="mailto:xinyang.hu@yale.edu">xinyang.hu@yale.edu</a><br />
+      GitHub:
+      <a href="https://github.com/xinyang-hu-00" target="_blank" rel="noopener noreferrer">
+        @xinyang-hu-00
+      </a><br />
+      Phone: <a href="tel:+16085159213">(+1) 608-515-9213</a>
+    </p>
+    <p class="meta">
+      Last updated: 2025.
+    </p>
+  </footer>
+</body>
+</html>

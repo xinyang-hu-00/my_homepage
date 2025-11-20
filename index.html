@@ -17,6 +17,23 @@
     header {
       margin-bottom: 2rem;
     }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+    .profile-info {
+      flex: 1;
+    }
     nav a {
       margin-right: 0.75rem;
       font-size: 0.95rem;
@@ -60,15 +77,29 @@
       body {
         padding: 0 1rem;
       }
+      .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 style="margin-bottom: 0.2rem;">Xinyang Hu</h1>
-    <div class="meta">
-      Ph.D. Candidate, Statistics &amp; Data Science, Yale University<br />
-      Research: Statistical Machine Learning · LLM Foundations · AI Agents · Responsible &amp; Interpretable AI
+    <div class="profile-header">
+      <img src="profile_pic.jpeg" alt="Xinyang Hu" class="profile-pic" />
+      <div class="profile-info">
+        <h1 style="margin-bottom: 0.2rem;">Xinyang Hu</h1>
+        <div class="meta">
+          Ph.D. Candidate, Statistics &amp; Data Science, Yale University<br />
+          Research: Statistical Machine Learning · LLM Foundations · AI Agents · Responsible &amp; Interpretable AI
+        </div>
+      </div>
     </div>
     <p class="tagline">
       I work on the theory and practice of large language models and multi-agent systems, with a focus on transparent,
